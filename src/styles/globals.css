@@ -24,3 +24,18 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes flyToCart {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(300px, -500px) scale(0.1);
+  }
+}
+
+.fly-to-cart {
+  animation: flyToCart 0.6s ease forwards;
+}
